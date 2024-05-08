@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
-    <link rel="stylesheet" href="stylecalc.css">
+    <title>games</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <p>
         calculator → <a href="calc.html">here</a>
+        
     </p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to the Game Website!</h1>
+  <div id="games">
+    <div id="tic-tac-toe">
+      <h2>Tic Tac Toe</h2>
+      <div class="game-container">
+        <div class="board"></div>
+        <div class="status"></div>
+      </div>
+    </div>
+    <div id="guessing-game">
+      <h2>Number Guessing Game</h2>
+      <p>Guess a number between 1 and 100:</p>
+      <input type="number" id="guessInput">
+      <button id="guessButton">Guess</button>
+      <p class="message"></p>
+    </div>
+  </div>
+
+  <script src="games.js"></script>
 </body>
 </html>
