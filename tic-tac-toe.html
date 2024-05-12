@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="styletictactoe.css">
+</head>
+<body>
+    <div id="tic-tac-toe">
+        <h2>Tic Tac Toe</h2>
+        <div class="game-container">
+          <div class="board"></div>
+          <div class="status"></div>
+        </div>
+    </div>    
+
+    <script>
+        const ticTacToeBoard = document.querySelector('#tic-tac-toe .board');
+        const ticTacToeStatus = document.querySelector('#tic-tac-toe .status');
+        const ticTacToeGame = new TicTacToe(ticTacToeBoard, ticTacToeStatus);
+        ticTacToeGame.start();
+    </script>
+</body>    

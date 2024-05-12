@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <style>
+        #guessing-game{
+            text-align: center;
+        }
+        .message{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="guessing-game">
+        <h2>Number Guessing Game</h2>
+        <p>Guess a number between 1 and 100:</p>
+        <input type="number" id="guessInput">
+        <button id="guessButton">Guess</button>
+        <p class="message"></p>
+      </div>  
+
+    <script>
+        const guessInput = document.getElementById('guessInput');
+        const guessButton = document.getElementById('guessButton');
+        const guessMessage = document.querySelector('#guessing-game .message');
+        const guessingGame = new GuessingGame();
+        guessButton.addEventListener('click', () => { 
+            const guess = parseInt(guessInput.value);
+            const result = guessingGame.guess(guess);
+            guessMessage.textContent = result;
+        });
+    </script>
+</body> 
