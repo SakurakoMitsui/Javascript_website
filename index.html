@@ -41,19 +41,47 @@
   <img src="https://cdn-icons-png.flaticon.com/512/5260/5260498.png" alt="game_icon" width="10%"> </h1>
 
   <div style="background-color: rgb(229, 229, 229); font-family: 'Times New Roman', Times, serif;" class="btn-group">
-    <button class="button1" a href="index.html">Home</button>
-    <button class="button1" a href="tictactoehomepage.html">Tic-Tac-Toe</button>
-    <button class="button1" a href="2048homepage.html">2048</button>
-    <button class="button1" a href="calchomepage.html">Calculator</button>
+    <button class="button1"><a href="index.html">Home</a></button>
+    <button class="button1"><a href="tictactoehomepage.html">Tic-Tac-Toe</a></button>
+    <button class="button1"><a href="2048homepage.html">2048</a></button>
+    <button class="button1"><a href="calchomepage.html">Calculator</a></button>
   </div>
 </header>
+
+
   
    
 
 
-  <div class="footer">
-    <p>Footer</p>
+  <div class="footer" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    <div class="feedback-form-container">
+      <form id="feedbackForm">
+        <p style="font-size: 130%; color: rgb(104, 104, 252);">Feed back form</p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Very Good</option>
+              <option value="3">3 - Good</option>
+              <option value="2">2 - Fair</option>
+              <option value="1">1 - Poor</option>
+          </select>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" required></textarea>
+
+          <button style="background-color: rgb(248, 236, 221); border-radius: 3cm; font-size: medium;" type="submit">Submit Feedback</button>
+      </form>
+      <div id="responseMessage"></div>
+    </div>
   </div>
+
+  <script src="script.js"></script>
  
 </body>
 </html>
